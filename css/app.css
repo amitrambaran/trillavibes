@@ -1,0 +1,54 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #000;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@-webkit-keyframes flash {
+    0%   {opacity: 1}
+    39% {opacity: 1}
+    40% {opacity: 0}
+    45% {opacity: 1}
+    50% {opacity: 0}
+    55% {opacity: 1}
+    60% {opacity: 0}
+    65% {opacity: 1}
+    85%{ opacity: 1}
+    100% {opacity: 0}
+  }
+
+@keyframes flash {
+    0%   {opacity: 1}
+    39% {opacity: 1}
+    40% {opacity: 0}
+    45% {opacity: 1}
+    50% {opacity: 0}
+    55% {opacity: 1}
+    60% {opacity: 0}
+    65% {opacity: 1}
+    85%{ opacity: 1}
+    100% {opacity: 0}
+  }
+
+#dots{
+    -webkit-animation: flash 2.3s;
+            animation: flash 2.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+.fadeIn{
+    text-align: center;
+    color: white;
+    font-family: 'Cutive Mono', monospace;
+    -webkit-animation: ease-in 2s;
+            animation: ease-in 2s;
+}
