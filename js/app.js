@@ -1,13 +1,13 @@
 var dots = document.getElementById('container__dots');
-var header = document.getElementById('header__trilla');
+var masterContent = document.querySelector('.master');
 
 setTimeout(function(){
 dots.parentNode.removeChild(dots);
 }, 2500);
 
 setTimeout(function(){
-    header.innerHTML = "Trilla.";
-    header.classList.add('fadeIn');
+    masterContent.classList.remove('hide');
+    masterContent.classList.add('master');
     }, 2600);
     
 
