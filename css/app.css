@@ -1,6 +1,7 @@
 html{
   height: 100%;  
   background-color: #000;
+  margin: 0;
 }
 
 body{
@@ -58,10 +59,10 @@ figure{
     padding: 20px;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     border-radius: 25px;
-    flex-wrap: wrap;
     text-align: center;
+    height: 75vh;
 }
 
 .slash{
@@ -72,22 +73,31 @@ figure{
     color: #A0A188;
 }
 
-.fullscreen-bg {
+.fullscreen__bg-container {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     z-index: -100;
 }
 
 .fullscreen-bg__video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.trilla-header{
+    margin: 0;
+    padding: 0;
 }
 
 .hide{
@@ -112,3 +122,28 @@ figure{
   100% {opacity: 1}
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer a{
+      margin: 5px;
+      color: #A0A188;
+      display: inline-block;
+  }
+
+  a:link{
+    color: #A0A188;
+    text-decoration: none;
+  }

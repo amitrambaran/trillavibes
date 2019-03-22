@@ -7,7 +7,6 @@ dots.parentNode.removeChild(dots);
 
 setTimeout(function(){
     masterContent.classList.remove('hide');
-    masterContent.classList.add('master');
     }, 2600);
     
 
