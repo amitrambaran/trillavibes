@@ -1,11 +1,11 @@
 html{
   height: 100%;  
   background-color: #000;
-  margin: 0;
 }
 
 body{
     font-family: 'Cinzel', serif;
+    overflow: hidden;
 }
 
 figure{
@@ -29,6 +29,7 @@ figure{
   }
 
 #dots{
+    display: block;
     animation: flash 2.3s;
     animation-fill-mode: forwards;
 }
@@ -76,11 +77,6 @@ figure{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.trilla-header{
-    margin: 0;
-    padding: 0;
 }
 
 .hide{
