@@ -3,9 +3,17 @@ html{
   background-color: #000;
 }
 
+@font-face {
+    font-family: 'RoadRage';
+    src: url('fonts/RoadRage.eot?#iefix') format('embedded-opentype'),  url('fonts/RoadRage.otf')  format('opentype'),
+           url('fonts/RoadRage.woff') format('woff'), url('fonts/RoadRage.ttf')  format('truetype'), url('fonts/RoadRage.svg#RoadRage') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body{
-    font-family: 'Cinzel', serif;
     overflow: hidden;
+    font-family: 'RoadRage';
 }
 
 figure{
@@ -58,7 +66,7 @@ figure{
 }
 
 .container__header{
-    color: #A0A188;
+    color: royalblue;
 }
 
 .fullscreen__bg-container {
@@ -110,15 +118,25 @@ footer {
   footer{
     display: flex;
     justify-content: space-around;
+    font-family: 'RoadRage';
+    font-size: 12px;
   }
 
   footer a{
       margin: 5px;
-      color: #A0A188;
+      color: royalblue;
       display: inline-block;
+      font-family: 'RoadRage';
   }
 
   a:link{
-    color: #A0A188;
+    color: whitesmoke;
     text-decoration: none;
+    font-family: 'RoadRage';
   }
+
+  @media only screen and (min-width: 600px) {
+      footer{
+          font-size: 1rem;
+      }
+  } 
