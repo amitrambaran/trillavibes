@@ -1,165 +1,212 @@
-html{
-  height: 100%;  
+html {
+  height: 100%;
   background-color: #000;
 }
 
 @font-face {
-    font-family: 'RoadRage';
-    src: url('fonts/RoadRage.eot?#iefix') format('embedded-opentype'),  url('fonts/RoadRage.otf')  format('opentype'),
-           url('fonts/RoadRage.woff') format('woff'), url('fonts/RoadRage.ttf')  format('truetype'), url('fonts/RoadRage.svg#RoadRage') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-body{
-    overflow: hidden;
-    font-family: 'RoadRage';
+  font-family: 'RoadRage';
+  src: url('fonts/RoadRage.eot?#iefix') format('embedded-opentype'), url('fonts/RoadRage.otf') format('opentype'), url('fonts/RoadRage.woff') format('woff'), url('fonts/RoadRage.ttf') format('truetype'), url('fonts/RoadRage.svg#RoadRage') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-figure{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  overflow: hidden;
+  font-family: 'RoadRage';
+}
+
+figure {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @-webkit-keyframes flash {
-    0%   {opacity: 1}
-    39% {opacity: 1}
-    40% {opacity: 0}
-    45% {opacity: 1}
-    50% {opacity: 0}
-    55% {opacity: 1}
-    60% {opacity: 0}
-    65% {opacity: 1}
-    85%{ opacity: 1}
-    100% {opacity: 0}
+  0% {
+    opacity: 1
   }
+  39% {
+    opacity: 1
+  }
+  40% {
+    opacity: 0
+  }
+  45% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0
+  }
+  55% {
+    opacity: 1
+  }
+  60% {
+    opacity: 0
+  }
+  65% {
+    opacity: 1
+  }
+  85% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
 
 @keyframes flash {
-    0%   {opacity: 1}
-    39% {opacity: 1}
-    40% {opacity: 0}
-    45% {opacity: 1}
-    50% {opacity: 0}
-    55% {opacity: 1}
-    60% {opacity: 0}
-    65% {opacity: 1}
-    85%{ opacity: 1}
-    100% {opacity: 0}
+  0% {
+    opacity: 1
   }
-
-#dots{
-    display: block;
-    -webkit-animation: flash 2.3s;
-            animation: flash 2.3s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    width:100%;
-    height: auto;
-    max-width: 340px;
+  39% {
+    opacity: 1
+  }
+  40% {
+    opacity: 0
+  }
+  45% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0
+  }
+  55% {
+    opacity: 1
+  }
+  60% {
+    opacity: 0
+  }
+  65% {
+    opacity: 1
+  }
+  85% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
 }
 
-.fadeIn{
-    text-align: center;
-    color: #A0A188;
-    -webkit-animation: ease-in 2s;
-            animation: ease-in 2s;
+#dots {
+  display: block;
+  -webkit-animation: flash 2.3s;
+  animation: flash 2.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  width: 100%;
+  height: auto;
+  max-width: 340px;
 }
 
-.container__main{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    text-align: center;
-    height: 75vh;
+.fadeIn {
+  text-align: center;
+  color: #A0A188;
+  -webkit-animation: ease-in 2s;
+  animation: ease-in 2s;
 }
 
-.slash{
-    color: rgba(23,20,119,1);
+.container__main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  text-align: center;
+  height: 75vh;
 }
 
-.container__header{
-    color: royalblue;
+.slash {
+  color: rgba(23, 20, 119, 1);
+}
+
+.container__header {
+  color: royalblue;
 }
 
 .fullscreen__bg-container {
-    position: fixed;
-    min-width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    z-index: -100;
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  z-index: -100;
 }
 
 .fullscreen-bg__video {
-    position: absolute;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.hide{
-    display: none;
-    opacity: 0;
+.hide {
+  display: none;
+  opacity: 0;
 }
 
-.master{
-    -webkit-animation: fadeIn 2s;
-            animation: fadeIn 2s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+.master {
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeIn{
-  0%   {opacity: 0}
-  100% {opacity: 1}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }
 
-@keyframes fadeIn{
-  0%   {opacity: 0}
-  100% {opacity: 1}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #000;
-    color: white;
-    text-align: center;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
 
-  footer{
-    display: flex;
-    justify-content: space-around;
-    font-family: 'RoadRage';
-    font-size: 12px;
-  }
+footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'RoadRage';
+  font-size: 12px;
+}
 
-  footer a{
-      margin: 5px;
-      color: royalblue;
-      display: inline-block;
-      font-family: 'RoadRage';
-  }
+footer a {
+  margin: 5px;
+  color: royalblue;
+  display: inline-block;
+  font-family: 'RoadRage';
+}
 
-  a:link{
-    text-decoration: none;
-    font-family: 'RoadRage';
-  }
+a:link {
+  text-decoration: none;
+  font-family: 'RoadRage';
+}
 
-  @media only screen and (min-width: 600px) {
-      footer{
-          font-size: 1rem;
-      }
-  } 
+@media only screen and (min-width: 600px) {
+  footer {
+    font-size: 1rem;
+  }
+}
