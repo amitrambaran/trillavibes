@@ -26,30 +26,39 @@ figure {
   0% {
     opacity: 1
   }
+
   39% {
     opacity: 1
   }
+
   40% {
     opacity: 0
   }
+
   45% {
     opacity: 1
   }
+
   50% {
     opacity: 0
   }
+
   55% {
     opacity: 1
   }
+
   60% {
     opacity: 0
   }
+
   65% {
     opacity: 1
   }
+
   85% {
     opacity: 1
   }
+
   100% {
     opacity: 0
   }
@@ -59,30 +68,39 @@ figure {
   0% {
     opacity: 1
   }
+
   39% {
     opacity: 1
   }
+
   40% {
     opacity: 0
   }
+
   45% {
     opacity: 1
   }
+
   50% {
     opacity: 0
   }
+
   55% {
     opacity: 1
   }
+
   60% {
     opacity: 0
   }
+
   65% {
     opacity: 1
   }
+
   85% {
     opacity: 1
   }
+
   100% {
     opacity: 0
   }
@@ -162,6 +180,7 @@ figure {
   0% {
     opacity: 0
   }
+
   100% {
     opacity: 1
   }
@@ -171,24 +190,25 @@ figure {
   0% {
     opacity: 0
   }
+
   100% {
     opacity: 1
   }
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000;
-  color: white;
-  text-align: center;
+#carousel {
+  display: block;
+  margin-top: 2rem;
 }
 
 footer {
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
   font-family: 'RoadRage';
   font-size: 12px;
 }
