@@ -4,14 +4,18 @@ html {
 }
 
 @font-face {
-  font-family: 'RoadRage';
-  src: url('fonts/RoadRage.eot?#iefix') format('embedded-opentype'), url('fonts/RoadRage.otf') format('opentype'), url('fonts/RoadRage.woff') format('woff'), url('fonts/RoadRage.ttf') format('truetype'), url('fonts/RoadRage.svg#RoadRage') format('svg');
+  font-family: "RoadRage";
+  src: url("fonts/RoadRage.eot?#iefix") format("embedded-opentype"),
+    url("fonts/RoadRage.otf") format("opentype"),
+    url("fonts/RoadRage.woff") format("woff"),
+    url("fonts/RoadRage.ttf") format("truetype"),
+    url("fonts/RoadRage.svg#RoadRage") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'RoadRage';
+  font-family: "RoadRage";
   overflow: hidden;
 }
 
@@ -24,85 +28,85 @@ figure {
 
 @-webkit-keyframes flash {
   0% {
-    opacity: 1
+    opacity: 1;
   }
 
   39% {
-    opacity: 1
+    opacity: 1;
   }
 
   40% {
-    opacity: 0
+    opacity: 0;
   }
 
   45% {
-    opacity: 1
+    opacity: 1;
   }
 
   50% {
-    opacity: 0
+    opacity: 0;
   }
 
   55% {
-    opacity: 1
+    opacity: 1;
   }
 
   60% {
-    opacity: 0
+    opacity: 0;
   }
 
   65% {
-    opacity: 1
+    opacity: 1;
   }
 
   85% {
-    opacity: 1
+    opacity: 1;
   }
 
   100% {
-    opacity: 0
+    opacity: 0;
   }
 }
 
 @keyframes flash {
   0% {
-    opacity: 1
+    opacity: 1;
   }
 
   39% {
-    opacity: 1
+    opacity: 1;
   }
 
   40% {
-    opacity: 0
+    opacity: 0;
   }
 
   45% {
-    opacity: 1
+    opacity: 1;
   }
 
   50% {
-    opacity: 0
+    opacity: 0;
   }
 
   55% {
-    opacity: 1
+    opacity: 1;
   }
 
   60% {
-    opacity: 0
+    opacity: 0;
   }
 
   65% {
-    opacity: 1
+    opacity: 1;
   }
 
   85% {
-    opacity: 1
+    opacity: 1;
   }
 
   100% {
-    opacity: 0
+    opacity: 0;
   }
 }
 
@@ -119,13 +123,12 @@ figure {
 
 .fadeIn {
   text-align: center;
-  color: #A0A188;
+  color: #a0a188;
   -webkit-animation: ease-in 2s;
   animation: ease-in 2s;
 }
 
 .container__main {
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,11 +137,14 @@ figure {
   height: 75vh;
 }
 
-.slash {
-  color: rgba(23, 20, 119, 1);
+.container__content {
+  width: 90%;
+  max-width: 600px;
+  height: 90%;
 }
 
 .container__header {
+  margin-top: 0;
   color: royalblue;
 }
 
@@ -152,7 +158,7 @@ figure {
   z-index: -100;
 }
 
-.fullscreen-bg__video {
+.fullscreen__bg-video {
   position: absolute;
   width: auto;
   height: auto;
@@ -178,21 +184,21 @@ figure {
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -210,7 +216,7 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #000;
-  font-family: 'RoadRage';
+  font-family: "RoadRage";
   font-size: 12px;
 }
 
@@ -218,12 +224,12 @@ footer a {
   margin: 5px;
   color: royalblue;
   display: inline-block;
-  font-family: 'RoadRage';
+  font-family: "RoadRage";
 }
 
 a:link {
   text-decoration: none;
-  font-family: 'RoadRage';
+  font-family: "RoadRage";
 }
 
 @media only screen and (min-width: 600px) {
